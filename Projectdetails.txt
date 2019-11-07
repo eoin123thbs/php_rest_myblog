@@ -1,0 +1,15 @@
+php_rest_myblog:
+
+THREE MAIN PARTS
+i) Config Folder will hold our Database class -> used to  do core connection to mySQL using PDO.
+WE've created the database; the class itself and within the database class, we made the connection object.
+
+ii)		Models Folder; post model and category model.
+Created on model for the Posts table - initialized the properties within - to represent the same in the table; id, category_id, title, created_at, etc.
+Making a constructor which is one method/function made to run when the class is called/initialized
+To create a Contructor: 'function __construct(){}' [double underscore]
+
+When instantiating a new Post to the db we need to pass in the database object - then we want to set the connection of the post class to that DB parameter
+
+iii) 	Frontend facing API folder -> Contain files that we'll hit in HTTP Client (postman)
+
